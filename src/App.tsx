@@ -22,7 +22,7 @@ function App() {
 
   useEffect(() => {
     loadUser();
-  }, [loadUser]);
+  }, [ loadUser ]);
 
   return (
     <BrowserRouter>
