@@ -64,7 +64,7 @@ export function Features() {
               <ArrowRight className="w-5 h-5" />
             </Link>
             <a
-              href="#"
+              href="https://github.com/indrafetch09/orion-pulse-web"
               className="flex items-center justify-center gap-4 bg-secondary hover:bg-secondary/80 text-secondary-foreground text-base font-medium px-8 py-3.5 rounded-md transition-all border border-border w-full sm:w-auto"
             >
               <FaGithub className="text-2xl gap" />
