@@ -149,7 +149,6 @@ export default function LoginPage() {
                   Register
                 </button>
               </div>
-
               <div className="space-y-3">
                 <div>
                   <label
@@ -209,9 +208,13 @@ export default function LoginPage() {
                   />
                 </div>
               </div>
-
-              {error && <p className="text-sm text-destructive">{error}</p>}
-
+              {/* Error should not return code in presentation layer*/}
+              {error && (
+                <p className="text-sm text-destructive">
+                  {/* Login Failed, Try Again */}
+                  {error}
+                </p>
+              )}
               <Button type="submit" className="w-full" isLoading={isLoading}>
                 {isRegister ? "Create Acount" : "Sign In"}
               </Button>
