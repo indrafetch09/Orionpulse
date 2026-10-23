@@ -4,7 +4,7 @@ import { loginCommand } from "./commands/login.js";
 import { scanCommand } from "./commands/scan.js";
 import { startCommand } from "./commands/start.js";
 import { writeConfig, readConfig, clearConfig } from "./services/config.js";
-import { intro, outro, spinner, note, cancel, log } from "@clack/prompts";
+import { intro, outro, spinner, note, cancel } from "@clack/prompts";
 import axios from "axios";
 
 const isDev = process.argv.includes("--dev") || process.argv.includes("-d");
